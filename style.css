@@ -62,7 +62,7 @@ nav#sTopNav a {
 nav#sTopNav a:hover {
   background-color: #000;
 }
-main {
+div#front-div {
   height: 500px;
   margin-top: 80px;
   text-align: center;
