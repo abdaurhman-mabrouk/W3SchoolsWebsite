@@ -5,13 +5,13 @@ htmlBoard = document.getElementById("htmlCode")
 htmlBoard.innerText = `
 <!DOCTYPE html>
 <html>
-<head>
-<title>HTML Tutorial</title>
-</head>
-<body>
+ <head>
+  <title>HTML Tutorial</title>
+ </head>
+ <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
 
-</body>
+ </body>
 </html>`

@@ -104,18 +104,53 @@ div#front-div a {
   color: #fff;
 }
 div#htmlDiv {
+  height: 600px;
+  padding-top: 60px;
   text-align: center;
   background-color: #d9eee1;
 }
 div#htmlDiv span {
   display: inline-block;
-  width: 30vw;
+  width: 40vw;
   height: 60vh;
   margin: 20px 50px;
   border: 1px solid black;
   vertical-align: middle;
 }
-div#htmlDiv span button {
+div#htmlDiv span.left button {
   display: block;
-  margin: 0 auto;
+  width: 170px;
+  height: 50px;
+  border-radius: 20px;
+  margin: 15px auto;
+}
+button#green {
+  background-color: #036107;
+}
+button#yellow {
+  background-color: #fff4a3;
+}
+button#black {
+  background-color: #000;
+  color: white;
+}
+button#pink {
+  background-color: pink;
+}
+div#htmlDiv span.right {
+  width: 450px;
+  padding: 20px auto;
+  text-align: left;
+  color: white;
+  background-color: #000;
+}
+div#htmlCode span.right h1 {
+  margin: 10px auto;
+}
+img#htmlCode {
+  padding: 0;
+  margin: 10px 0 20px 15px;
+  text-align: left;
+  border: 1px solid black;
+  color: #fff;
 }

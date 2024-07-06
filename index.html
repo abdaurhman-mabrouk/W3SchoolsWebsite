@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/websiteLogo.png"
+      type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>W3Schools</title>
+    <title>W3Schools Online Tutorials</title>
   </head>
   <body>
     <nav id="fTopNav">
@@ -68,17 +72,19 @@
         <br />
         <a href="#">Not Sure Where To Begin?</a>
       </div>
+
       <div id="htmlDiv">
-        <span>
+        <span class="left">
           <h1>HTML</h1>
           <p>The language for building web pages</p>
-          <button type="button">Learn HTML</button>
-          <button type="button">Video Tutorial</button>
-          <button type="button">HTML Reference</button>
-          <button type="button">Get Certified</button>
+          <button type="button" id="green">Learn HTML</button>
+          <button type="button" id="yellow">Video Tutorial</button>
+          <button type="button" id="black">HTML Reference</button>
+          <button type="button" id="pink">Get Certified</button>
         </span>
-        <span>
-          <div id="htmlCode"></div>
+        <span class="right">
+          <h1>HTML Example:</h1>
+          <img src="assets/images/htmlCode.png" id="htmlCode" />
         </span>
       </div>
     </main>
