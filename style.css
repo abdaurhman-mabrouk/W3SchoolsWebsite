@@ -85,6 +85,7 @@ div#front-div p {
 div#front-div input[type='search'] {
   position: relative;
   left: 90px;
+  top: -130px;
   width: 350px;
   height: 35px;
   padding: 10px;
@@ -96,7 +97,25 @@ div#front-div img#spacerImg {
   right: -300px;
 }
 div#front-div a {
+  position: relative;
+  top: -130px;
   text-decoration: underline;
   margin-top: 30px;
   color: #fff;
+}
+div#htmlDiv {
+  text-align: center;
+  background-color: #d9eee1;
+}
+div#htmlDiv span {
+  display: inline-block;
+  width: 30vw;
+  height: 60vh;
+  margin: 20px 50px;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+div#htmlDiv span button {
+  display: block;
+  margin: 0 auto;
 }
