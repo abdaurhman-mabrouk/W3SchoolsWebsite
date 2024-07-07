@@ -16,16 +16,19 @@ nav#fTopNav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100vw;
   height: 50px;
   background-color: #1d2a35;
 }
+
 img#websiteLogo {
   margin: 3px 15px 3px 3px;
 }
 nav#fTopNav ul a {
   margin: 0;
   padding: 15px 4px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
   vertical-align: middle;
@@ -33,13 +36,17 @@ nav#fTopNav ul a {
 nav#fTopNav ul a:hover {
   background-color: #04aa6d;
 }
+nav#fTopNav ul a#logoLink:hover {
+  background-color: #1d2a35;
+}
 nav#fTopNav span.right {
-  margin-left: 340px;
+  margin-left: 510px;
 }
 nav#fTopNav input[type='search'] {
-  width: 140px;
+  width: 180px;
   height: 30px;
-  padding: 5px;
+  padding: 2px 5px;
+  margin-left: 40px;
   border-radius: 40px;
   vertical-align: middle;
 }
@@ -47,8 +54,10 @@ nav#sTopNav {
   position: fixed;
   left: 0;
   top: 50px;
+  z-index: 1;
   width: 100vw;
   height: 30px;
+  font-size: 15px;
   background-color: #282a35;
 }
 nav#sTopNav a {
@@ -103,7 +112,8 @@ div#front-div a {
   margin-top: 30px;
   color: #fff;
 }
-div#htmlDiv {
+div#htmlDiv,
+div.lang-div {
   height: 600px;
   padding-top: 60px;
   text-align: center;
@@ -114,43 +124,114 @@ div#htmlDiv span {
   width: 40vw;
   height: 60vh;
   margin: 20px 50px;
-  border: 1px solid black;
+  border: 1px hidden black;
   vertical-align: middle;
 }
 div#htmlDiv span.left button {
   display: block;
-  width: 170px;
-  height: 50px;
-  border-radius: 20px;
-  margin: 15px auto;
+  width: 200px;
+  height: 60px;
+  margin: 20px auto;
+  font-size: 20px;
+  border-radius: 50px;
 }
-button#green {
-  background-color: #036107;
+div#htmlDiv span.left h1 {
+  font-size: 40px;
 }
-button#yellow {
+div#htmlDiv span.left p {
+  font-size: 20px;
+}
+button.green {
+  background-color: #04aa6d;
+}
+button.yellow {
   background-color: #fff4a3;
 }
-button#black {
+button.black {
   background-color: #000;
   color: white;
 }
-button#pink {
+button.pink {
   background-color: pink;
 }
 div#htmlDiv span.right {
-  width: 450px;
+  width: 460px;
+  height: 480px;
   padding: 20px auto;
   text-align: left;
   color: white;
-  background-color: #000;
+  background-color: #38444d;
 }
-div#htmlCode span.right h1 {
-  margin: 10px auto;
+div#htmlDiv span.right h1 {
+  margin: 7px 20px;
 }
 img#htmlCode {
   padding: 0;
-  margin: 10px 0 20px 15px;
+  margin: 30px 0 20px 30px;
   text-align: left;
   border: 1px solid black;
   color: #fff;
+}
+div#htmlDiv span.right button {
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+  padding: 7px;
+  border-radius: 50px;
+  background-color: #04aa6d;
+}
+
+div#cssDiv {
+  background-color: #fff4a3;
+}
+div.lang-div span {
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+div.lang-div span.left {
+  margin-right: 100px;
+}
+div.lang-div span.left button {
+  width: 200px;
+  height: 60px;
+  margin: 5px auto;
+  padding: 5px 1px;
+  font-size: 20px;
+  display: block;
+  border-radius: 40px;
+}
+div.lang-div span.right {
+  margin-left: 160px;
+  background-color: #38444d;
+}
+div.lang-div span.right h1 {
+  float: left;
+  margin-left: 23px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+div.lang-div span.right button {
+  width: 150px;
+  height: 40px;
+  margin-left: 23px;
+  margin-top: 20px;
+  float: left;
+  border-radius: 40px;
+  background-color: #04aa6d;
+}
+footer {
+  width: calc(100vw -1px);
+  height: 700px;
+  padding: 0;
+  background-image: url('assets/images/background_in_space.webp');
+}
+img#landingLogo {
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
 }
