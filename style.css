@@ -28,7 +28,7 @@ img#websiteLogo {
 nav#fTopNav ul a {
   margin: 0;
   padding: 15px 4px;
-  font-size: 20px;
+  font-size: 17px;
   color: white;
   text-decoration: none;
   vertical-align: middle;
@@ -56,7 +56,7 @@ nav#sTopNav {
   top: 50px;
   z-index: 1;
   width: 100vw;
-  height: 30px;
+  height: 32px;
   font-size: 15px;
   background-color: #282a35;
 }
@@ -190,15 +190,24 @@ div.lang-div span {
   height: 450px;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid black;
 }
 div.lang-div span.left {
   margin-right: 100px;
+  padding-top: 30px;
 }
+div.lang-div span.left h1 {
+  font-size: 50px;
+}
+
+div.lang-div span.left p {
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+
 div.lang-div span.left button {
   width: 200px;
   height: 60px;
-  margin: 5px auto;
+  margin: 20px auto;
   padding: 5px 1px;
   font-size: 20px;
   display: block;
@@ -206,6 +215,7 @@ div.lang-div span.left button {
 }
 div.lang-div span.right {
   margin-left: 160px;
+  padding-top: 20px;
   background-color: #38444d;
 }
 div.lang-div span.right h1 {
@@ -226,12 +236,24 @@ div.lang-div span.right button {
 footer {
   width: calc(100vw -1px);
   height: 700px;
-  padding: 0;
+  padding-top: 400px;
   background-image: url('assets/images/background_in_space.webp');
+}
+img#footerLogo {
 }
 img#landingLogo {
   position: relative;
-  right: 0px;
-  bottom: 0px;
-  margin: auto;
+  right: -977px;
+  bottom: -113px;
+  margin: 0;
+}
+footer ul {
+  text-align: center;
+  margin-left: -510px;
+}
+footer ul a {
+  margin: 0 15px;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #fff4a3;
 }
