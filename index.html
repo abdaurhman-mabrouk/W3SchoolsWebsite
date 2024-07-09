@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
     <link
       rel="shortcut icon"
       href="./assets/images/websiteLogo.png"
       type="image/x-icon" />
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
 
     <title>W3Schools Online Web Tutorials</title>
   </head>
@@ -21,18 +32,22 @@
             id="websiteLogo" />
         </a>
         <span class="left">
-          <a href="#">Tutorials</a>
-          <a href="#">Exercises</a>
-          <a href="#">Certificates</a>
-          <a href="#">Services</a>
-          <input type="search" name="" id="" placeholder="Search..." />
+          <a href="#">Tutorials<i class="fa-solid fa-caret-down"></i></a>
+          <a href="#">Exercises<i class="fa-solid fa-caret-down"></i></a>
+          <a href="#">Certificates<i class="fa-solid fa-caret-down"></i></a>
+          <a href="#">Services<i class="fa-solid fa-caret-down"></i></a>
+          <input
+            type="search"
+            name="searchField"
+            id="searchField"
+            placeholder="Search..." />
           <button type="button">Toggle</button>
         </span>
         <span class="right">
           <a href="#">Plus</a>
           <a href="#">Spaces</a>
           <a href="#">Get Certified</a>
-          <a href="#">My W3Schools</a>
+          <a href="#">MyW3Schools</a>
           <a href="#">
             <img src="./assets/images/user32px.png" alt="" id="userLogo" />
           </a>
@@ -83,7 +98,16 @@
       <div id="front-div">
         <h1>Learn to Code</h1>
         <p>With the world's largest web developer site.</p>
-        <input type="search" name="" id="" />
+        <input
+          type="search"
+          name="searchField2"
+          id="searchField2"
+          placeholder="Search our tutorials, e.g. HTML" />
+        <button type="button" id="searchBtn">
+          <i
+            class="fa-solid fa-magnifying-glass fa-lg"
+            style="color: #ffffff"></i>
+        </button>
         <img
           src="assets\images\lynx_in_space.webp"
           alt="SpacerImage"

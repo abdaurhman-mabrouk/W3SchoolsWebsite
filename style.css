@@ -39,8 +39,11 @@ nav#fTopNav ul a:hover {
 nav#fTopNav ul a#logoLink:hover {
   background-color: #1d2a35;
 }
+nav#fTopNav ul span.left a {
+  margin-right: 5px;
+}
 nav#fTopNav span.right {
-  margin-left: 510px;
+  margin-left: 490px;
 }
 nav#fTopNav input[type='search'] {
   width: 180px;
@@ -54,7 +57,7 @@ nav#fTopNav input[type='search']::placeholder {
   font-style: italic;
 }
 img#userLogo {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 nav#sTopNav {
   position: fixed;
@@ -136,7 +139,21 @@ div#front-div input[type='search'] {
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   font-size: 20px;
+  display: inline-block;
+}
+button#searchBtn {
+  position: relative;
+  top: -131px;
+  left: 85px;
+  width: 100px;
+  height: 47px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: inline-block;
+  background-color: #04aa6d;
 }
 div#front-div img#spacerImg {
   position: relative;
