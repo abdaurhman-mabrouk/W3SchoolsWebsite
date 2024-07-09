@@ -131,11 +131,12 @@ div#front-div input[type='search'] {
   position: relative;
   left: 90px;
   top: -130px;
-  width: 350px;
-  height: 35px;
+  width: 480px;
+  height: 45px;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
+  font-size: 20px;
 }
 div#front-div img#spacerImg {
   position: relative;
