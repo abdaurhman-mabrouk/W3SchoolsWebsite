@@ -33,44 +33,52 @@
           <a href="#">Spaces</a>
           <a href="#">Get Certified</a>
           <a href="#">My W3Schools</a>
-          <a href="#"></a>
+          <a href="#">
+            <img src="./assets/images/user32px.png" alt="" id="userLogo" />
+          </a>
         </span>
       </ul>
     </nav>
+
     <nav id="sTopNav">
-      <a href="#">HTML</a>
-      <a href="#">CSS</a>
-      <a href="#">JAVASCRIPT</a>
-      <a href="#">SQL</a>
-      <a href="#">PYTHON</a>
-      <a href="#">JAVA</a>
-      <a href="#">PHP</a>
-      <a href="#">HOW TO</a>
-      <a href="#">W3.CSS</a>
-      <a href="#">C</a>
-      <a href="#">C++</a>
-      <a href="#">C#</a>
-      <a href="#">BOOTSTRAP</a>
-      <a href="#">REACT</a>
-      <a href="#">MYSQL</a>
-      <a href="#">JQUERY</a>
-      <a href="#">EXCEL</a>
-      <a href="#">XML</a>
-      <a href="#">DJANGO</a>
-      <a href="#">NUMPY</a>
-      <a href="#">PANDAS</a>
-      <a href="#">NODEJS</a>
-      <a href="#">DSA</a>
-      <a href="#">AI</a>
-      <a href="#">GEN AI</a>
-      <a href="#">VUE</a>
-      <a href="#">RUST</a>
-      <!--
-      <a href="#">ASP</a>
-      <a href="#">SASS</a>
-      <a href="#">AWS</a>
-      -->
+      <button type="button" id="SL">&lt;</button>
+
+      <span>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVASCRIPT</a>
+        <a href="#">SQL</a>
+        <a href="#">PYTHON</a>
+        <a href="#">JAVA</a>
+        <a href="#">PHP</a>
+        <a href="#">HOW TO</a>
+        <a href="#">W3.CSS</a>
+        <a href="#">C</a>
+        <a href="#">C++</a>
+        <a href="#">C#</a>
+        <a href="#">BOOTSTRAP</a>
+        <a href="#">REACT</a>
+        <a href="#">MYSQL</a>
+        <a href="#">JQUERY</a>
+        <a href="#">EXCEL</a>
+        <a href="#">XML</a>
+        <a href="#">DJANGO</a>
+        <a href="#">NUMPY</a>
+        <a href="#">PANDAS</a>
+        <a href="#">NODEJS</a>
+        <a href="#">DSA</a>
+        <a href="#">AI</a>
+        <a href="#">GEN AI</a>
+        <a href="#">VUE</a>
+        <a href="#">RUST</a>
+        <!--  <a href="#">ASP</a>
+         <a href="#">SASS</a>
+         <a href="#">AWS</a> -->
+      </span>
+
+      <button type="button" id="SR">&gt;</button>
     </nav>
+
     <main>
       <div id="front-div">
         <h1>Learn to Code</h1>
@@ -114,23 +122,109 @@
           <button type="button">Try it Yourself</button>
         </span>
       </div>
-    </main>
-    <footer>
-      <ul>
-        <a href="#">
-          <img
-            src="assets\images\websiteColorlessLogo.png"
-            alt="footerLogo"
-            id="footerLogo" />
-        </a>
-        <a href="#">SPACES</a>
-        <a href="#">UPGRADE</a>
-        <a href="#">AD-FREE</a>
-        <a href="#">NEWSLETTER</a>
-        <a href="#">GET CERTIFIED</a>
-        <a href="#">CONTACT US</a>
-      </ul>
 
+      <div id="jsDiv" class="lang-div">
+        <span class="left">
+          <h1>JavaScript</h1>
+          <p>The language for styling web pages</p>
+          <button type="button" class="green">Learn JavaScript</button>
+          <button type="button" class="black">JavaScript Reference</button>
+          <button type="button" class="pink">Get Certified</button>
+        </span>
+        <span class="right">
+          <h1>JavaScript Example:</h1>
+          <img src="assets/images/jscode.png" id="jsCode" />
+          <button type="button">Try it Yourself</button>
+        </span>
+      </div>
+    </main>
+
+    <footer>
+      <div id="mainContainer">
+        <ul>
+          <a href="#">
+            <img
+              src="assets\images\websiteColorlessLogo.png"
+              alt="footerLogo"
+              id="footerLogo" />
+          </a>
+          <a href="#">SPACES</a>
+          <a href="#">UPGRADE</a>
+          <a href="#">AD-FREE</a>
+          <a href="#">NEWSLETTER</a>
+          <a href="#">GET CERTIFIED</a>
+          <a href="#">CONTACT US</a>
+        </ul>
+        <div>
+          <ul class="column" id="column1">
+            <h3>Top Tutorials</h3>
+            <br />
+            <li>HTML Tutorial</li>
+            <li>CSS Tutorial</li>
+            <li>JavaScript Tutorial</li>
+            <li>How To Tutorial</li>
+            <li>SQL Tutorial</li>
+            <li>Python Tutorial</li>
+            <li>W3.CSS Tutorial</li>
+            <li>Bootstrap Tutorial</li>
+            <li>PHP Tutorial</li>
+            <li>Java Tutorial</li>
+            <li>C++ Tutorial</li>
+            <li>jQuery Tutorial</li>
+          </ul>
+
+          <ul class="column" id="column2">
+            <h3>Top References</h3>
+            <br />
+            <li>HTML Reference</li>
+            <li>CSS Reference</li>
+            <li>JavaScript Reference</li>
+            <li>How To Reference</li>
+            <li>SQL Reference</li>
+            <li>Python Reference</li>
+            <li>W3.CSS Reference</li>
+            <li>Bootstrap Reference</li>
+            <li>PHP Reference</li>
+            <li>Java Reference</li>
+            <li>C++ Reference</li>
+            <li>jQuery Reference</li>
+          </ul>
+
+          <ul class="column" id="column3">
+            <h3>Top Examples</h3>
+            <br />
+            <li>HTML Examples</li>
+            <li>CSS Examples</li>
+            <li>JavaScript Examples</li>
+            <li>How To Examples</li>
+            <li>SQL Examples</li>
+            <li>Python Examples</li>
+            <li>W3.CSS Examples</li>
+            <li>Bootstrap Examples</li>
+            <li>PHP Examples</li>
+            <li>Java Examples</li>
+            <li>C++ Examples</li>
+            <li>jQuery Examples</li>
+          </ul>
+
+          <ul class="column" id="column4">
+            <h3>Get Certified</h3>
+            <br />
+            <li>HTML Certificate</li>
+            <li>CSS Certificate</li>
+            <li>JavaScript Certificate</li>
+            <li>How To Certificate</li>
+            <li>SQL Certificate</li>
+            <li>Python Certificate</li>
+            <li>W3.CSS Certificate</li>
+            <li>Bootstrap Certificate</li>
+            <li>PHP Certificate</li>
+            <li>Java Certificate</li>
+            <li>C++ Certificate</li>
+            <li>jQuery Certificate</li>
+          </ul>
+        </div>
+      </div>
       <img
         src="assets/images/lynx_landing.png"
         alt="LandingImage"
