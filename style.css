@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  transition: 0.25s;
+  transition: all 0.25s;
+  scroll-behavior: smooth;
 }
 html {
   box-sizing: border-box;
@@ -140,11 +141,19 @@ div.f-navbar-links-div div.headerDiv h1 {
 div.f-navbar-links-div div.headerDiv input {
   width: 10px;
 }
+div.contentContainer {
+  margin-left: 300px;
+}
+h2.column-title {
+  color: #fff4a3;
+}
 ul.column {
   list-style-type: none;
   margin-top: 50px;
   margin-right: 50px;
   display: inline-block;
+  vertical-align: text-top;
+  font-size: 20px;
 }
 
 main {
