@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FAVICON -->
+    <!-- Website Icon -->
     <link
       rel="shortcut icon"
       href="./assets/images/websiteLogo.png"
       type="image/x-icon" />
 
-    <!-- STYLES -->
+    <!-- External Styles -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- FONT AWESOME -->
+    <!-- Font Awesome -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
       integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
@@ -23,6 +23,7 @@
     <title>W3Schools Online Web Tutorials</title>
   </head>
   <body>
+    <!-- Website First Top NavBar -->
     <nav id="fTopNav">
       <ul>
         <a href="#" id="logoLink">
@@ -31,11 +32,14 @@
             alt="Website Logo"
             id="websiteLogo" />
         </a>
+
         <span class="left">
-          <a href="#">Tutorials<i class="fa-solid fa-caret-down"></i></a>
-          <a href="#">Exercises<i class="fa-solid fa-caret-down"></i></a>
-          <a href="#">Certificates<i class="fa-solid fa-caret-down"></i></a>
-          <a href="#">Services<i class="fa-solid fa-caret-down"></i></a>
+          <a href="#" id="tutorialsLink"
+            >Tutorials <i class="fa-solid fa-caret-down"></i
+          ></a>
+          <a href="#">Exercises <i class="fa-solid fa-caret-down"></i></a>
+          <a href="#">Certificates <i class="fa-solid fa-caret-down"></i></a>
+          <a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
           <input
             type="search"
             name="searchField"
@@ -43,6 +47,7 @@
             placeholder="Search..." />
           <button type="button">Toggle</button>
         </span>
+
         <span class="right">
           <a href="#">Plus</a>
           <a href="#">Spaces</a>
@@ -52,9 +57,154 @@
             <img src="./assets/images/user32px.png" alt="" id="userLogo" />
           </a>
         </span>
+        <span id="hiddenContentDiv">
+          <div
+            id="TutorialsDiv"
+            class="f-navbar-links-div"
+            style="display: none">
+            <div class="headerDiv">
+              <h1>Tutorials</h1>
+              <input type="search" name="" id="" />
+            </div>
+            <br />
+            <div class="contentContainer">
+              <ul class="column">
+                <h2>HTML and CSS</h2>
+                <br />
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>RWD</li>
+                <li>BootStrap</li>
+                <li>W3.CSS</li>
+                <li>Sass</li>
+                <li>Colors</li>
+                <li>Icons</li>
+                <li>SVG</li>
+                <li>Canavas</li>
+                <li>Graphics</li>
+                <li>Charecter Sets</li>
+                <li>How To</li>
+              </ul>
+
+              <ul class="column">
+                <h2>JavaScript</h2>
+                <br />
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>JQuery</li>
+                <li>Vue</li>
+                <li>AngularJs</li>
+                <li>Json</li>
+                <li>AJax</li>
+                <li>AppML</li>
+                <li>W3.JS</li>
+              </ul>
+
+              <ul class="column">
+                <h2>Backend</h2>
+                <br />
+                <li>Python</li>
+                <li>SQL</li>
+                <li>MySql</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>R</li>
+                <li>Kotline</li>
+                <li>Go</li>
+                <li>DJango</li>
+                <li>PostgreSQL</li>
+                <li>TypeScript</li>
+                <li>ASP</li>
+                <li>NodeJS</li>
+                <li>Respberry Pi</li>
+                <li>Git</li>
+                <li>MongoDB</li>
+                <li>AWS Cloud</li>
+                <li>XML</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="ExercisesDiv"
+            class="f-navbar-links-div"
+            style="display: none">
+            <div>
+              <h1 class="hidden-div-title">Exercises</h1>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="search-bar-hidden-div" />
+            </div>
+            <br />
+            <div class="contentContainer">
+              <ul class="column">
+                <h2 class="column-title">HTML and CSS</h2>
+                <br />
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>RWD</li>
+                <li>BootStrap</li>
+                <li>W3.CSS</li>
+                <li>Sass</li>
+                <li>Colors</li>
+                <li>Icons</li>
+                <li>SVG</li>
+                <li>Canavas</li>
+                <li>Graphics</li>
+                <li>Charecter Sets</li>
+                <li>How To</li>
+              </ul>
+
+              <ul class="column">
+                <h2 class="column-title">JavaScript</h2>
+                <br />
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>JQuery</li>
+                <li>Vue</li>
+                <li>AngularJs</li>
+                <li>Json</li>
+                <li>AJax</li>
+                <li>AppML</li>
+                <li>W3.JS</li>
+              </ul>
+
+              <ul class="column">
+                <h2 class="column-title">Backend</h2>
+                <br />
+                <li>Python</li>
+                <li>SQL</li>
+                <li>MySql</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>R</li>
+                <li>Kotline</li>
+                <li>Go</li>
+                <li>DJango</li>
+                <li>PostgreSQL</li>
+                <li>TypeScript</li>
+                <li>ASP</li>
+                <li>NodeJS</li>
+                <li>Respberry Pi</li>
+                <li>Git</li>
+                <li>MongoDB</li>
+                <li>AWS Cloud</li>
+                <li>XML</li>
+              </ul>
+            </div>
+          </div>
+        </span>
       </ul>
     </nav>
 
+    <!-- Website Secound Top Navbar -->
     <nav id="sTopNav">
       <button type="button" id="SL">&lt;</button>
 
@@ -94,7 +244,8 @@
       <button type="button" id="SR">&gt;</button>
     </nav>
 
-    <main>
+    <!-- Website Main Content -->
+    <main id="mainContentContainer">
       <div id="front-div">
         <h1>Learn to Code</h1>
         <p>With the world's largest web developer site.</p>
@@ -163,6 +314,7 @@
       </div>
     </main>
 
+    <!-- Website Footer -->
     <footer>
       <div id="mainContainer">
         <ul>
@@ -255,6 +407,6 @@
         id="landingLogo" />
     </footer>
   </body>
-  <!-- JavaScript -->
+  <!-- External JavaScript -->
   <script src="main.js"></script>
 </html>
