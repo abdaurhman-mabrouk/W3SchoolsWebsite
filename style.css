@@ -43,6 +43,14 @@ nav#fTopNav ul a:focus {
 nav#fTopNav ul a#logoLink:hover {
   background-color: #1d2a35;
 }
+button#toggleBtn {
+  width: 32px;
+  height: 34px;
+  vertical-align: middle;
+  border-radius: 100%;
+  border: none;
+  background-image: url('./assets/images/لقطة شاشة 2024-07-10 001346.png');
+}
 
 nav#fTopNav span.right {
   margin-left: 490px;
@@ -103,19 +111,17 @@ nav#sTopNav button:hover {
 button#SR {
   float: right;
 }
-
 nav#sTopNav a:hover {
   background-color: #000;
 }
-
 div.f-navbar-links-div {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 10;
-  width: 94vw;
-  height: 93vh;
-  padding: 100px 0 0 100px;
+  width: calc(80vw + 1px);
+  height: calc(86vh);
+  padding: 60px 0 0 300px;
   margin: 0;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -123,26 +129,41 @@ div.f-navbar-links-div {
   background-color: #282a35;
 }
 div.f-navbar-links-div div.headerDiv {
-  position: relative;
-  top: 0;
-  left: 40%;
+  margin: 0;
+  padding: 0;
   width: fit-content;
   height: fit-content;
-  text-align: center;
+  text-align: left;
 }
 div.f-navbar-links-div div.headerDiv h1,
 div.f-navbar-links-div div.headerDiv input[type='search'] {
-  display: inline-block;
+  display: inline;
+  vertical-align: middle;
 }
 div.f-navbar-links-div div.headerDiv h1 {
-  font-size: 30px;
-  margin-right: 50px;
+  margin-right: 30px;
+  font-size: 40px;
+  color: #fff4a3;
 }
-div.f-navbar-links-div div.headerDiv input {
-  width: 10px;
+div.f-navbar-links-div div.headerDiv input[type='search'] {
+  width: 400px !important;
+  height: 45px !important;
+  padding: 5px 10px !important;
+  margin-left: 180px !important;
+  font-size: 15px;
+  color: #fff;
+  background-color: #464646;
+}
+div.f-navbar-links-div div.headerDiv input[type='search']::placeholder {
+  font-style: italic;
+  font-size: 15px;
+  color: white;
 }
 div.contentContainer {
-  margin-left: 300px;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
 }
 h2.column-title {
   color: #fff4a3;
@@ -150,10 +171,13 @@ h2.column-title {
 ul.column {
   list-style-type: none;
   margin-top: 50px;
-  margin-right: 50px;
+  margin-right: 128px;
   display: inline-block;
   vertical-align: text-top;
-  font-size: 20px;
+}
+ul.column li {
+  margin-top: 1px;
+  font-size: 16px;
 }
 
 main {
@@ -408,4 +432,9 @@ footer div ul.column li {
 }
 footer div ul.column h3 {
   color: #fff4a3;
+}
+#footerText {
+  position: relative;
+  top: 180px;
+  left: 250px;
 }
