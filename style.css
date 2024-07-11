@@ -1,6 +1,16 @@
+:root {
+  --main-color: #04aa6d;
+  --color-2: #1d2a35;
+  --color-3: #282a35;
+  --color-4: #464646;
+  --color-5: #38444d;
+  --color-6: #fff4a3;
+  --color-7: #d9eee1;
+}
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   transition: all 0.25s;
   scroll-behavior: smooth;
 }
@@ -35,7 +45,7 @@ nav#fTopNav ul a {
   vertical-align: middle;
 }
 nav#fTopNav ul a:hover {
-  background-color: #04aa6d;
+  background-color: var(--main-color);
 }
 nav#fTopNav ul a:focus {
   background-color: #282a35;
@@ -63,6 +73,9 @@ nav#fTopNav input[type='search'] {
   border-radius: 40px;
   vertical-align: middle;
 }
+nav#fTopNav span.right a {
+  margin-right: 3px;
+}
 nav#fTopNav input[type='search']::placeholder {
   font-style: italic;
 }
@@ -84,9 +97,10 @@ nav#sTopNav {
 }
 nav#sTopNav span {
   max-width: fit-content;
-  height: fit-content;
+  max-height: 25px;
   margin: 0;
   display: inline;
+  overflow-x: scroll;
 }
 nav#sTopNav span a {
   margin: -1px;
@@ -119,8 +133,8 @@ div.f-navbar-links-div {
   top: 50px;
   left: 0px;
   z-index: 10;
-  width: calc(80vw + 1px);
-  height: calc(86vh);
+  width: calc(99vw + 1px);
+  height: calc(93vh + 5px);
   padding: 60px 0 0 300px;
   margin: 0;
   overflow-y: scroll;
@@ -153,6 +167,7 @@ div.f-navbar-links-div div.headerDiv input[type='search'] {
   font-size: 15px;
   color: #fff;
   background-color: #464646;
+  border: none;
 }
 div.f-navbar-links-div div.headerDiv input[type='search']::placeholder {
   font-style: italic;
@@ -207,12 +222,13 @@ div#front-div p {
 }
 div#front-div input[type='search'] {
   position: relative;
-  left: 90px;
   top: -130px;
+  left: 90px;
   width: 480px;
   height: 45px;
   padding: 10px;
   margin-bottom: 20px;
+  border: none;
   border-radius: 20px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -221,14 +237,19 @@ div#front-div input[type='search'] {
 }
 button#searchBtn {
   position: relative;
-  top: -131px;
+  top: -133px;
   left: 85px;
   width: 100px;
-  height: 47px;
+  height: 45px;
+  margin-bottom: 20px;
+  border: none;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   display: inline-block;
-  background-color: #04aa6d;
+  background-color: var(--main-color);
+}
+button {
+  border: none;
 }
 div#front-div img#spacerImg {
   position: relative;
@@ -272,7 +293,7 @@ div#htmlDiv span.left p {
   font-size: 20px;
 }
 button.green {
-  background-color: #04aa6d;
+  background-color: var(--main-color);
 }
 button.yellow {
   background-color: #fff4a3;
@@ -308,7 +329,7 @@ div#htmlDiv span.right button {
   margin-left: 20px;
   padding: 7px;
   border-radius: 50px;
-  background-color: #04aa6d;
+  background-color: var(--main-color);
 }
 
 div#cssDiv {
@@ -361,7 +382,7 @@ div.lang-div span.right button {
   margin-top: 20px;
   float: left;
   border-radius: 40px;
-  background-color: #04aa6d;
+  background-color: var(--main-color);
 }
 div#jsDiv {
   color: white;
@@ -437,4 +458,10 @@ footer div ul.column h3 {
   position: relative;
   top: 180px;
   left: 250px;
+}
+/* For Mobile Phone*/
+@media only screen and (max-width: 768px) {
+  div.lang-div span.right {
+    display: none;
+  }
 }

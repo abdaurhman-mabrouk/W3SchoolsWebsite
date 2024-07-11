@@ -12,6 +12,7 @@ const tutorialsSearchField = document.querySelector("tutorialsDiv div.headerDiv 
 
 tutorialsLink.onclick = () => {
     let divDisplay = tutorialsDiv.style.display
+
     if (divDisplay == `` || divDisplay == `block`) {
         tutorialsDiv.style.display = `none`
         sTopNav.style.zIndex = "2"
