@@ -10,8 +10,11 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  font-variant: normal;
+  font-style: normal;
   transition: all 0.25s;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 html {
@@ -59,9 +62,10 @@ button#toggleBtn {
   border-radius: 100%;
   border: none;
   background-image: url('./assets/images/لقطة شاشة 2024-07-10 001346.png');
+  cursor: pointer;
 }
 nav#fTopNav span.right {
-  margin-left: 490px;
+  margin-left: 350px;
 }
 nav#fTopNav span.right a {
   margin-right: 3px;
@@ -79,6 +83,10 @@ nav#fTopNav input[type='search']::placeholder {
 }
 img#userLogo {
   margin-left: 1px;
+  padding: 1px;
+  vertical-align: middle;
+  outline: 1px solid gainsboro;
+  border-radius: 100%;
 }
 nav#sTopNav {
   position: fixed;
@@ -86,8 +94,9 @@ nav#sTopNav {
   left: 0;
   z-index: 2;
   max-width: 100vw;
-  max-height: 30px;
+  max-height: 50px;
   width: calc(100vw - 15px);
+  height: 50px;
   font-size: 15px;
   background-color: #282a35;
 }
@@ -256,6 +265,10 @@ div#front-div span.right {
 }
 div#front-div img#spacerImg {
   z-index: 1;
+}
+button,
+input {
+  font-family: Verdana, sans-serif;
 }
 button {
   border: none;
